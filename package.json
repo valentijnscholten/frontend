@@ -68,7 +68,7 @@
     "growl": "1.10.5",
     "https-proxy-agent": "2.2.4",
     "sass": "1.49.7",
-    "sass-loader": "8.0.2",
+    "sass-loader": "13.2.0",
     "uuid": "7.0.3",
     "vue-template-compiler": "2.6.14"
   },
