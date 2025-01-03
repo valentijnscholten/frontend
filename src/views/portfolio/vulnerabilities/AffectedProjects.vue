@@ -140,6 +140,7 @@ export default {
       this.$refs.table.hideLoading();
     },
   },
+
   watch: {
     showInactiveProjects() {
       if (localStorage) {
@@ -152,6 +153,10 @@ export default {
       this.currentPage = 1;
       this.refreshTable();
     },
+      vulnId() {
+        // update url when vulnId changes, will trigger table refresh
+        this.$refs.table.refreshOptions({...this.options, url: this.apiUrl()});
+      }
   },
 };
 </script>
